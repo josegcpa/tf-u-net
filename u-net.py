@@ -172,8 +172,7 @@ def main(mode,
         output_shapes = (
             [input_height,input_width,3],
             [input_height,input_width,n_classes],
-            [input_height,input_width,1]
-            )
+            [input_height,input_width,1])
     elif 'test' in mode:
         is_training = False
         output_types = (tf.uint8,tf.float64)

@@ -1,3 +1,4 @@
+.gitignore
 checkpoints
 cross_tiling.py
 finetune-all.sh
@@ -44,3 +45,10 @@ train-u-net-no-aug.sh
 train-u-net.sh
 trial-u-net.sh
 truth
+test_results_unet_adden_2_ft_on_ac1.csv
+test_results_unet_adden_2_ft.csv
+test_results_unet_adden_2.csv
+__pycache__/tf_da.cpython-36.pyc
+__pycache__/data_generators.cpython-36.pyc
+.gitignore
+__pycache__/unet_utilities.cpython-36.pyc

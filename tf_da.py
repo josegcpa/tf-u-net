@@ -65,7 +65,7 @@ class ImageAugmenter:
                 alpha_affine=self.elastic_transform_alpha_affine,
                 p=self.elastic_transform_p)
 
-        image_shape = image.get_shape().as_list()
+        image_shape = image.shape.as_list()
         image = random_color_transformations(image,
                                              self.brightness_max_delta,
                                              self.saturation_lower,
@@ -74,13 +74,10 @@ class ImageAugmenter:
                                              self.contrast_lower,
                                              self.contrast_upper)
         image = gaussian_blur(image,
-                              self.blur_probability,
-                              self.blur_size,
-                              self.blur_mean,
-                              self.blur_std)
+                              self.blur_probability,self.blur_size,
+                              self.blur_mean,self.blur_std)
         image = salt_and_pepper(image,
-                                self.salt_prob,
-                                self.pepper_prob)
+                                self.salt_prob,self.pepper_prob)
         image = gaussian_noise(image,self.noise_stddev)
         image,masks = random_rotation(
             image,*masks,
@@ -101,12 +98,9 @@ class ImageAugmenter:
 def random_color_transformations(
     image,
     brightness_max_delta,
-    saturation_lower,
-    saturation_upper,
+    saturation_lower,saturation_upper,
     hue_max_delta,
-    contrast_lower,
-    contrast_upper
-    ):
+    contrast_lower,contrast_upper):
 
     """
     Function to randomly alter an images brightness, saturation, hue and
@@ -182,10 +176,9 @@ def random_color_transformations(
         )
         return image
 
-    with tf.variable_scope('RandomColor') and tf.name_scope('RandomColor'):
-        color_ordering = tf.random_uniform([],0,4,tf.int32)
-        image = distort_colors(image,color_ordering)
-        image = tf.clip_by_value(image,0.,1.)
+    color_ordering = tf.random_uniform([],0,4,tf.int32)
+    image = distort_colors(image,color_ordering)
+    image = tf.clip_by_value(image,0.,1.)
     return image
 
 def salt_and_pepper(
@@ -194,21 +187,15 @@ def salt_and_pepper(
     pepper_prob=0.01
     ):
 
-    with tf.variable_scope('SaltAndPepper') and tf.name_scope('SaltAndPepper'):
-        def get_mask(h,w,p):
-            return tf.expand_dims(
-                tf.where(
-                    tf.random.uniform(
-                        shape=(h,w),
-                        minval=0.,
-                        maxval=1.) > p
-                ,
-                tf.ones((h,w)),
-                tf.zeros((h,w))),
-                axis=2)
+    def get_mask(h,w,p):
+        return tf.expand_dims(
+            tf.where(tf.random.uniform(shape=(h,w),minval=0.,maxval=1.) > p,
+            tf.ones((h,w)),
+            tf.zeros((h,w))),
+            axis=2)
 
         image_shape = tf.shape(image)
-        image_shape_list = image.get_shape().as_list()
+        image_shape_list = image.shape.as_list()
         salt_mask = get_mask(image_shape[0],image_shape[1],salt_prob)
         pepper_mask = get_mask(image_shape[0],image_shape[1],pepper_prob)
 
@@ -283,7 +270,8 @@ def gaussian_blur(
     mean=0.0,
     std=0.05):
     """
-    Function to randomly apply a gaussian blur on an image. Based on https://stackoverflow.com/questions/52012657/how-to-make-a-2d-gaussian-filter-in-tensorflow/52012658
+    Function to randomly apply a gaussian blur on an image. 
+    Based on https://stackoverflow.com/questions/52012657/how-to-make-a-2d-gaussian-filter-in-tensorflow/52012658
 
     Parameters:
     * image - three channel image (H,W,3)
@@ -305,7 +293,7 @@ def gaussian_blur(
         return gauss_kernel / tf.reduce_sum(gauss_kernel)
 
     with tf.variable_scope('RandomRot') and tf.name_scope('RandomRot'):
-        image_shape = image.get_shape().as_list()
+        image_shape = image.shape.as_list()
         gaussian_filter = gaussian_kernel(size,mean,std)
         gaussian_filter = tf.stack([gaussian_filter for _ in range(3)],axis=-1)
         gaussian_filter = tf.stack([gaussian_filter for _ in range(3)],axis=-1)
@@ -357,7 +345,7 @@ def elastic_transform(image,*masks,sigma=10,alpha_affine=10,p=0.7):
                           alpha_affine=alpha_affine,
                           p=p)
 
-    shapes = [x.get_shape().as_list() for x in [image,*masks]]
+    shapes = [x.shape.as_list() for x in [image,*masks]]
 
     out = tf.py_func(
         lambda x,*y: unpack_et(image=x,masks=y),

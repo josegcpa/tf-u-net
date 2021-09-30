@@ -1,0 +1,885 @@
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/truth
+	padding=SAME
+	extension=.png
+	input_height=512
+	input_width=512
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/truth
+	padding=SAME
+	extension=.png
+	input_height=2096
+	input_width=2096
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset/truth
+	padding=SAME
+	extension=.png
+	input_height=2096
+	input_width=2096
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/full_split_512/test/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/full_split_512/test/truth
+	padding=SAME
+	extension=.png
+	input_height=2096
+	input_width=2096
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/full_split_512/test/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/full_split_512/test/truth
+	padding=SAME
+	extension=.png
+	input_height=512
+	input_width=512
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+TEST,IOU,global,0.8433158038649616
+TEST,AUC,global,0.9606815145690634
+TEST,F1-score,global,0.9149987236009631
+TEST,IOU,mean,0.8396968971592497
+TEST,IOU,sd,0.21362549268295444
+TEST,IOU,q05,0.18242085217805293
+TEST,IOU,q95,0.9528695624140302
+TEST,AUC,mean,0.9980159385705417
+TEST,AUC,sd,0.012809691079050962
+TEST,AUC,q05,0.9974569381260737
+TEST,AUC,q95,0.9999918268702017
+TEST,F1-score,mean,0.8881081957581494
+TEST,F1-score,sd,0.21524895838815453
+TEST,F1-score,q05,0.30335477486392887
+TEST,F1-score,q95,0.9758655438172549
+TEST,time,mean,2.7807350876010504
+TEST,time,sd,1.567258013153161
+TEST,time,q05,2.5079828103072943
+TEST,time,q95,2.961597131099552
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/train
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+TEST,IOU,global,0.6924984570498793
+TEST,AUC,global,0.975187030215772
+TEST,F1-score,global,0.8183150231722436
+TEST,IOU,mean,0.8574047364584101
+TEST,IOU,sd,0.07712274788182712
+TEST,IOU,q05,0.7259871356491956
+TEST,IOU,q95,0.9241243848633973
+TEST,AUC,mean,0.9999028065419027
+TEST,AUC,sd,9.677249190216416e-05
+TEST,AUC,q05,0.9997298825508816
+TEST,AUC,q95,0.9999841793349473
+TEST,F1-score,mean,0.9212460398949625
+TEST,F1-score,sd,0.047802139532109815
+TEST,F1-score,q05,0.8392915106993136
+TEST,F1-score,q95,0.9605655755471425
+TEST,time,mean,14.405110836339494
+TEST,time,sd,1.6186138306839053
+TEST,time,q05,12.935567909386009
+TEST,time,q95,17.02845013234764
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/train
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+TEST,IOU,global,0.8499698431845597
+TEST,AUC,global,0.9780432686786146
+TEST,F1-score,global,0.9189012959491402
+TEST,IOU,mean,0.8595670759272873
+TEST,IOU,sd,0.07693157859972347
+TEST,IOU,q05,0.7258931099437838
+TEST,IOU,q95,0.9247611762088876
+TEST,AUC,mean,0.9999065050394154
+TEST,AUC,sd,8.955611445006094e-05
+TEST,AUC,q05,0.9997500215854047
+TEST,AUC,q95,0.9999841379338315
+TEST,F1-score,mean,0.9225104739911577
+TEST,F1-score,sd,0.047674233903560286
+TEST,F1-score,q05,0.8393249742140478
+TEST,F1-score,q95,0.960907528872502
+TEST,time,mean,15.178979306481779
+TEST,time,sd,1.586787807467458
+TEST,time,q05,13.861846151202919
+TEST,time,q95,17.93176203947514
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/train
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/nfs/research1/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/segmentation_dataset_0.25/my_u-net.ckpt-26000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/train
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+TEST,IOU,global,0.846741875274484
+TEST,AUC,global,0.9756555894546565
+TEST,F1-score,global,0.917011615549825
+TEST,IOU,mean,0.857293412020937
+TEST,IOU,sd,0.07665067770396027
+TEST,IOU,q05,0.726833434968795
+TEST,IOU,q95,0.9245428140042509
+TEST,AUC,mean,0.9999037677674316
+TEST,AUC,sd,9.04305764579275e-05
+TEST,AUC,q05,0.9997430735828714
+TEST,AUC,q95,0.9999828569524531
+TEST,F1-score,mean,0.9212091859906228
+TEST,F1-score,sd,0.04742212134879955
+TEST,F1-score,q05,0.8399495874625935
+TEST,F1-score,q95,0.9607892586918678
+TEST,time,mean,11.489232773706316
+TEST,time,sd,0.8291224505016029
+TEST,time,q05,10.716891579702498
+TEST,time,q95,12.849209524784236
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/finetune_on_adden_2_0.25/my_u-net.ckpt-6000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/train
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/finetune_on_adden_2_0.25/my_u-net.ckpt-6000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/train
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/segmentation_dataset_adden_2/test/truth
+	padding=SAME
+	extension=.png
+	input_height=1024
+	input_width=1024
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+TEST,IOU,global,0.8483049784725996
+TEST,AUC,global,0.969419741649614
+TEST,F1-score,global,0.9179274939502906
+TEST,IOU,mean,0.8498589264488011
+TEST,IOU,sd,0.07677581866120448
+TEST,IOU,q05,0.7124974714138483
+TEST,IOU,q95,0.9185692921977979
+TEST,AUC,mean,0.999833346172413
+TEST,AUC,sd,0.0002283801730748875
+TEST,AUC,q05,0.9994459456810451
+TEST,AUC,q95,0.9999771452921963
+TEST,F1-score,mean,0.9168691067022205
+TEST,F1-score,sd,0.04743979447124249
+TEST,F1-score,q05,0.8312813829044268
+TEST,F1-score,q95,0.957540964269368
+TEST,time,mean,1.1064757347106933
+TEST,time,sd,2.37258867277122
+TEST,time,q05,0.30918118283152585
+TEST,time,q95,4.672204533964387
+
+INPUT ARGUMENTS:
+	mode=tumble_test
+	log_file=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/log.txt
+	log_every_n_steps=10
+	save_summary_steps=100
+	save_summary_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	save_checkpoint_steps=100
+	save_checkpoint_folder=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net
+	squeeze_and_excite=False
+	iglovikov=False
+	batch_size=1
+	number_of_steps=5000
+	epochs=None
+	acl=0.0
+	beta_l2_regularization=0
+	learning_rate=0.001
+	factorization=False
+	residuals=False
+	weighted=False
+	depth_mult=0.25
+	truth_only=False
+	aux_node=False
+	checkpoint_path=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/checkpoints/finetune_on_adden_2_0.25/my_u-net.ckpt-6000
+	prediction_output=no_path
+	large_prediction_output=no_path
+	brightness_max_delta=0.06274509803921569
+	saturation_lower=0.8
+	saturation_upper=1.2
+	hue_max_delta=0.2
+	contrast_lower=0.8
+	contrast_upper=1.2
+	salt_prob=0.1
+	pepper_prob=0.1
+	noise_stddev=0.05
+	blur_probability=0.1
+	blur_size=3
+	blur_mean=0
+	blur_std=0.05
+	discrete_rotation=False
+	min_jpeg_quality=30
+	max_jpeg_quality=70
+	elastic_transform_p=0.3
+	noise_chance=0.1
+	blur_chance=0.05
+	resize=False
+	resize_height=256
+	resize_width=256
+	dataset_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/full_split_512/test/input
+	path_csv=None
+	truth_dir=/hps/research/gerstung/josegcpa/projects/01IMAGE/u-net/full_split_512/test/truth
+	padding=SAME
+	extension=.png
+	input_height=512
+	input_width=512
+	n_classes=2
+	trial=False
+	key_list=None
+Total parameters: 1945556 (trainable: 1941122)
+
+TEST,IOU,global,0.6460676378984102
+TEST,AUC,global,0.9673485481157285
+TEST,F1-score,global,0.7849830991431996
+TEST,IOU,mean,0.8333625400721135
+TEST,IOU,sd,0.1930813146802579
+TEST,IOU,q05,0.4658607587150016
+TEST,IOU,q95,0.9554071897095153
+TEST,AUC,mean,0.9989614333569131
+TEST,AUC,sd,0.004501597238723939
+TEST,AUC,q05,0.9976631584847658
+TEST,AUC,q95,0.9999898751608873
+TEST,F1-score,mean,0.8903740198648055
+TEST,F1-score,sd,0.1811700678730668
+TEST,F1-score,q05,0.6353118319393056
+TEST,F1-score,q95,0.9771949410281136
+TEST,time,mean,0.1281398161603459
+TEST,time,sd,1.183224414250426
+TEST,time,q05,0.07187940292060375
+TEST,time,q95,0.07606628984212875
+

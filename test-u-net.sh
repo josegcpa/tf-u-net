@@ -9,7 +9,7 @@ TRUTH=$5
 EXTRA_ARG=$6
 CKPT_PATH=$(cat $GEN_PATH/checkpoint | tail -5 | head -1 | cut -d ' ' -f 2 | awk '{gsub(/"/,""); print $0}')
 
-SIZE=1024
+SIZE=512
 
 if [ $MODE == TUMBLE ]
 then
