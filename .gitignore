@@ -52,3 +52,10 @@ __pycache__/tf_da.cpython-36.pyc
 __pycache__/data_generators.cpython-36.pyc
 .gitignore
 __pycache__/unet_utilities.cpython-36.pyc
+testing_set_files_adden_1
+testing_set_files_adden_2
+.gitignore
+testing_set_files_mll
+testing_set_files_adden_2_ft
+.gitignore
+testing_set_files_mll_ft
